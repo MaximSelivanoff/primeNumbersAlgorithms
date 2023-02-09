@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="ProbTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProbTests.Designer.cs">
+      <DependentUpon>ProbTests.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Sieve_of_Atkin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sieve_of_Atkin.Designer.cs">
+      <DependentUpon>Sieve_of_Atkin.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Sieve_of_Eratosthenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sieve_of_Eratosthenes.Designer.cs">
+      <DependentUpon>Sieve_of_Eratosthenes.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ProbTests.resx">
+      <DependentUpon>ProbTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Sieve_of_Atkin.resx">
+      <DependentUpon>Sieve_of_Atkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Sieve_of_Eratosthenes.resx">
+      <DependentUpon>Sieve_of_Eratosthenes.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
